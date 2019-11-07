@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>qwx</title>
+         <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+
+
+
+
+    <body>
+        <h1>Onyl 3 character is missing </h1>
+        
+       <input id="testInput"></input>
+
+<script>
+testInput.onchange = testInput.oninput = restrict;
+
+function restrict() {
+    testInput.value = testInput.value.replace(/[^a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,r,s,t,u,v,y,z],[^0-9]/g, "");
+
+}
+</script>
+
+        
+
+
+     </body>
+
+
+</html>

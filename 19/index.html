@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>blabla</title>
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+
+
+<!-- css style sheet --> 
+    <style>
+body{ margin:10px; background:grey; }
+#my_canvas{ background:#FFF; border:#000 1px solid; }
+
+</style>
+
+
+    <body>
+        
+
+        <label> <h1>THE LIST CHANGER</h1></label>
+        <input type="text" id="textw">
+        <button onclick="List_T()">Add</button>
+
+
+
+<ul id="unordered">
+    <li>""</li>
+
+</ul>
+       
+
+<!-- js element with list   -->
+
+<script>
+    
+   function List_T()
+            {
+
+                var textw = document.getElementById('textw').value,
+                    listNode = document.getElementById('unordered'),
+                    lNode = document.createElement("ooo"),
+                    t_Node = document.createTextNode(textw);
+            
+                 lNode.appendChild(t_Node);
+                 listNode.appendChild(lNode);
+            
+            }
+
+
+
+
+
+
+
+</script>
+
+
+        
+    </body>
+</html>

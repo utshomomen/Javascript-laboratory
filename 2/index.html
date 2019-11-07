@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<table id="table" border="1">
+    
+
+    <tr>
+        <th>lefe</th>
+        <th>age</th>
+        <th>death</th>
+
+    </tr>
+
+    <! end row number 0-->
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td><td>
+    </tr>
+
+</table>
+
+<script type="text/javascript">
+    
+
+</script> 
+
+<script>
+
+var array = [["a","b","c"],
+            ["d","e","f"],
+            ["g","h","i"],
+            ["j","k","l"],
+            ["m","n","o"],
+            ["p","q","r"],
+            ["s","t","u"],
+            ["v","w","x"],
+            ["y","z","a1"],
+            ["b1","c1","d1"],
+            ["e1","f1","g1"],
+            ["h1","i1","j1"]],
+             
+table = document.getElementById("table");
+
+     for(var i = 1; i < table.rows.length; i++)
+        {
+          // cells
+          for(var j = 0; j < table.rows[i].cells.length; j++)
+          {
+              table.rows[i].cells[j].innerHTML = array[i - 1][j];
+          }
+        }
+
+</script>
+
+
+</head>
+<body>
+
+</body>  
+</html>

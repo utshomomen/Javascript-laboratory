@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>qwx</title>
+         <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+
+
+
+
+    <body>
+  
+<table id="table_t" border="1">
+
+<tr>
+    <th>one   </th>
+    <th>two   </th>
+    <th>three </th>
+
+</tr>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+
+    
+
+</table>
+
+<script type="text/javascript">
+    
+
+
+
+var  table1 = [["a","b","c"],["d","e","f"],["g","h","i"]];
+//var table1 = "<table border  "1"  width ="300"  ";
+
+function build(arr, prefix) {
+  var s= '';
+  arr[0].forEach(function(val) {
+    var sl= arr.slice(1),
+        out= prefix + '<td>' + val;
+    
+    if(sl.length) {
+      s+= build(sl, out);
+    }
+    else {
+      s+= out;
+    }
+  });
+  return s;
+} 
+
+document.body.innerHTML= '<table>' + build(table1, '<tr>') + '</table>';
+
+</script>
+
+
+
+
+     </body>
+
+
+</html>

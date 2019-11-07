@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript - Add HTML Table Row </title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            
+            function addRow()
+            {
+                // get input values
+                var fname = document.getElementById('fname').value;
+                 var lname = document.getElementById('lname').value;
+                  var age = document.getElementById('age').value;
+                  var clr = document.getElementById('clr').value;
+                  
+
+                    var aa1 = document.getElementById("clr");
+
+             
+                  var table = document.getElementsByTagName('table')[0];
+                  
+                 
+                  var newRow = table.insertRow(table.rows.length/2+1);
+                  
+                  
+                  var cel1 = newRow.insertCell(0);
+                  var cel2 = newRow.insertCell(1);
+                  var cel3 = newRow.insertCell(2);
+                  var cel4 = newRow.insertCell(3);
+                  
+                  // add values to the cells
+                  cel1.innerHTML = fname;
+                  cel2.innerHTML = lname;
+                  cel3.innerHTML = age;
+                  cel4.innerHTML = clr;
+            }
+            
+        </script>
+        
+    </head>
+
+    <body>
+        
+        <label><h1>Racism Database</h1></label> <br>
+
+        Name: <input type="text" name="fname" id="fname" /><br/><br/>
+        Date: <input type="date" name="lname" id="lname" /><br/><br/>
+        Age: <input type="text" name="age" id="age" /><br/><br/>
+        color: <input type="color" value="clr" id="clr" /><br/><br/>
+        <button onclick="addRow();">Add Row</button><br/><br/>
+
+        <table border="1">
+            
+            <tr>
+                <th>First Name</th>
+                <th>Date</th>
+                <th>Age</th>
+                <th>color</th>
+            </tr>
+            
+            <tr>
+                <td>AAAAAA</td>
+                <td>10.10.2012</td>
+                <td>10</td>
+                <td>#B2F2</td>
+            </tr>
+            
+             <tr>
+                <td>CCC</td>
+                <td>1.2.1088</td>
+                <td>20</td>
+                <td>#TGIS</td>
+            </tr>
+            
+             <tr>
+                <td>EEE</td>
+                <td>10.2.2010</td>
+                <td>30</td>
+                <td>#AUS</td>
+            </tr>
+            
+             <tr>
+                <td>GGGGG</td>
+                <td>5.06.1988</td>
+                <td>40</td>
+                <td>#c3c3c3</td>
+            </tr>
+            
+             <tr>
+                <td>MMMMMM</td>
+                <td>04.08.1999</td>
+                <td>50</td>
+                <td>#FFF</td>
+            </tr>
+            
+        </table>
+
+    </body>
+
+</html>
